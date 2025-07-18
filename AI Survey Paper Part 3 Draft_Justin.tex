@@ -160,6 +160,8 @@ The AI toolkits discussed are fundamentally dependent on data. For toolkits aime
 \textcolor{blue}{\subsubsection{Technology Maturity and Integration}
 While individual technologies are maturing, their integration poses a significant technical challenge. The NVIDIA Aerial SDK is a mature product, but its feasibility depends on seamless integration into a multi-vendor vRAN ecosystem. The O-RAN framework itself represents a major integration challenge focused on interoperability.}
 
+\textcolor{blue}{However, the feasibility of achieving large-scale integration is strongly validated by successes in other critical infrastructure sectors. The creation of national-scale digital twins for railway networks—as implemented by Deutsche Bahn and proposed for Malaysia's economic development—demonstrates the maturity of platforms like NVIDIA Omniverse. These projects prove it is technically feasible to fuse massive, heterogeneous data streams, from real-time IoT sensor data to geographical information systems (GIS) like OpenStreetMap, into a cohesive, synchronized virtual model. This precedent supports the argument that achieving a similar level of integration for a national mobile network is technically feasible.}
+
 \textcolor{blue}{\subsubsection{Security, Reliability, and Scalability}
 For these toolkits to be technically feasible, they must meet telco-grade requirements. The reliability of a software-defined stack like NVIDIA Aerial must be proven to match the "five-nines" (99.999\%) availability of traditional hardware. The scalability of managing thousands of unique xApp instances across a national network poses a significant MLOps challenge.}
 
@@ -167,11 +169,13 @@ For these toolkits to be technically feasible, they must meet telco-grade requir
 \textcolor{blue}{The surveyed toolkits facilitate a range of high-impact use cases for building intelligent mobile networks:}
 
 \begin{itemize}
-\item \textcolor{blue}{AI-Native Air Interface: The NVIDIA Aerial SDK enables the development of highly programmable and scalable 5G vRANs where AI/ML frameworks can be seamlessly integrated for real-time signal processing.}
+    \item \textcolor{blue}{AI-Native Air Interface: The NVIDIA Aerial SDK enables the development of highly programmable and scalable 5G vRANs where AI/ML frameworks can be seamlessly integrated for real-time signal processing.}
 
-\item \textcolor{blue}{System-Level R\&D and Optimization: The NVIDIA AODT allows researchers to benchmark system performance, explore ML-based algorithms, and optimize network planning using physically accurate simulations without abstractions.}
+    \item \textcolor{blue}{System-Level R\&D and Optimization: The NVIDIA AODT allows researchers to benchmark system performance, explore ML-based algorithms, and optimize network planning using physically accurate simulations without abstractions.}
 
-\item \textcolor{blue}{Rapid Prototyping and Deployment: NVIDIA Sionna accelerates research into 6G by enabling fast, GPU-accelerated modeling of communication systems, while its Sionna Research Kit (SRK) bridges the gap from research to reality by enabling deployment into a real software-defined 5G network.}
+    \item \textcolor{blue}{\textbf{Network-Scale Digital Twins for Operations:} Platforms like \textbf{NVIDIA Omniverse} are enabling digital twins of national infrastructure. For instance, Deutsche Bahn has already modeled its railway network, while \textbf{proposals for Malaysia's railway system highlight the strong economic drivers} for such projects, aiming to boost GDP and operational efficiency. This large-scale simulation concept is directly applicable to mobile networks for optimizing national 5G/6G cell placement, managing resources, and planning capacity by integrating network data with geographical information from sources like OpenStreetMap.}
+
+    \item \textcolor{blue}{Rapid Prototyping and Deployment: NVIDIA Sionna accelerates research into 6G by enabling fast, GPU-accelerated modeling of communication systems, while its Sionna Research Kit (SRK) bridges the gap from research to reality by enabling deployment into a real software-defined 5G network.}
 \end{itemize}
 
 \subsection{Deployment constraints in mobile networks}

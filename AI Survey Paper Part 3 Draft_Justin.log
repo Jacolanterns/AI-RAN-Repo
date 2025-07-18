@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 15:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,30 +316,43 @@ Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line
 
 
 [2 <./images/nvidia_aerial_sdk.jpg> <./images/nvidia_sionna_simulation.png>]
+Underfull \hbox (badness 1509) in paragraph at lines 163--164
+[][]\OT1/ptm/m/n/10 However, the fea-si-bil-ity of achiev-ing large-scale in-te-
+ []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 185--186
+Underfull \hbox (badness 2197) in paragraph at lines 163--164
+\OT1/ptm/m/n/10 dig-i-tal twins for rail-way net-works|as im-ple-mented by
+ []
+
+
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 189--190
 \OT1/ptm/m/n/10 tend sup-ports Ubuntu 22.04 and Win-dows 11. Spe-cific
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 195--196
+Underfull \hbox (badness 6141) in paragraph at lines 199--200
 [][]\OT1/ptm/b/n/10 Hardware: \OT1/ptm/m/n/10 While GPU-accelerated for per-for-mance,
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 208.
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+
+
+[3]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 212.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-[3]
-
-<fig1.png, id=24, 82.1469pt x 71.5473pt>
+<fig1.png, id=21, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 287.
+Package pdftex.def Info: fig1.png  used on input line 291.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-(./AI Survey Paper Part 3 Draft_Justin.bbl
+
+
+[4] (./AI Survey Paper Part 3 Draft_Justin.bbl
 Underfull \hbox (badness 2922) in paragraph at lines 33--35
 []\OT1/ptm/m/n/8 NVIDIA. (2025) Aerial cubb quick-start overview.
  []
@@ -354,9 +367,7 @@ Underfull \hbox (badness 5091) in paragraph at lines 33--35
 \OT1/ptm/m/n/8 able: https://docs.nvidia.com/aerial/archive/cuda-accelerated-ran/24-
  []
 
-
-
-[4 <./fig1.png (PNG copy)>])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -374,7 +385,7 @@ Before submitting the final camera ready copy, remember to:
 
 [5
 
-] (./AI Survey Paper Part 3 Draft_Justin.aux)
+ <./fig1.png (PNG copy)>] (./AI Survey Paper Part 3 Draft_Justin.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
@@ -389,7 +400,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,898b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (5 pages, 919315 bytes).
+Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (5 pages, 920968 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
