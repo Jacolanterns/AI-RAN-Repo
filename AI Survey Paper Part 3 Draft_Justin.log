@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,11 +316,11 @@ Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line
 
 
 [2 <./images/nvidia_aerial_sdk.jpg> <./images/nvidia_sionna_simulation.png>]
+
+
 Underfull \hbox (badness 1742) in paragraph at lines 185--186
 \OT1/ptm/m/n/10 tend sup-ports Ubuntu 22.04 and Win-dows 11. Spe-cific
  []
-
-
 
 
 Underfull \hbox (badness 6141) in paragraph at lines 195--196
@@ -354,7 +354,9 @@ Underfull \hbox (badness 5091) in paragraph at lines 33--35
 \OT1/ptm/m/n/8 able: https://docs.nvidia.com/aerial/archive/cuda-accelerated-ran/24-
  []
 
-)
+
+
+[4 <./fig1.png (PNG copy)>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -368,7 +370,11 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[4 <./fig1.png (PNG copy)>] (./AI Survey Paper Part 3 Draft_Justin.aux)
+
+
+[5
+
+] (./AI Survey Paper Part 3 Draft_Justin.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
@@ -377,16 +383,16 @@ L3 programming layer <2025-07-11>
 Here is how much of TeX's memory you used:
  4634 strings out of 467816
  73074 string characters out of 5436431
- 492891 words of memory out of 5000000
+ 494891 words of memory out of 5000000
  33203 multiletter control sequences out of 15000+600000
  677930 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,885b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,898b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (4 pages, 918554 bytes).
+Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (5 pages, 919315 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
