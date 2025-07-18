@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 10:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -236,20 +236,20 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 ) (./AI Survey Paper Part 3 Draft_Justin.aux)
 \openout1 = `"AI Survey Paper Part 3 Draft_Justin.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 -- Lines per column: 56 (exact).
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -271,15 +271,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 57.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 56.
 
 
 
@@ -291,10 +291,10 @@ LaTeX Font Info:    Calculating math sizes for size <11> on input line 57.
 <images/nvidia_aerial_sdk.jpg, id=10, 1204.5pt x 677.53125pt>
 File: images/nvidia_aerial_sdk.jpg Graphic file (type jpg)
 <use images/nvidia_aerial_sdk.jpg>
-Package pdftex.def Info: images/nvidia_aerial_sdk.jpg  used on input line 115.
+Package pdftex.def Info: images/nvidia_aerial_sdk.jpg  used on input line 114.
 (pdftex.def)             Requested size: 226.79846pt x 127.57439pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 131--132
+Underfull \hbox (badness 1354) in paragraph at lines 130--131
 \OT1/ptm/m/n/10 next-generation, system-level sim-u-la-tion plat-form for
  []
 
@@ -303,23 +303,23 @@ Underfull \hbox (badness 1354) in paragraph at lines 131--132
 <images/nvidia_sionna_simulation.png, id=11, 553.5882pt x 426.393pt>
 File: images/nvidia_sionna_simulation.png Graphic file (type png)
 <use images/nvidia_sionna_simulation.png>
-Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line 135.
+Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line 134.
 (pdftex.def)             Requested size: 226.79846pt x 174.68562pt.
 
 
 [2 <./images/nvidia_aerial_sdk.jpg> <./images/nvidia_sionna_simulation.png>]
-Underfull \hbox (badness 1400) in paragraph at lines 176--177
+Underfull \hbox (badness 1400) in paragraph at lines 175--176
  \OT1/ptm/m/it/10 1) NVIDIA Aerial Om-ni-verse Dig-i-tal Twin (AODT): [][]
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 178--179
+Underfull \hbox (badness 1742) in paragraph at lines 177--178
 \OT1/ptm/m/n/10 tend sup-ports Ubuntu 22.04 and Win-dows 11. Spe-cific
  []
 
 
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 201.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 200.
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -328,14 +328,14 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <fig1.png, id=24, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 280.
+Package pdftex.def Info: fig1.png  used on input line 279.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 291.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 290.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 291.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 290.
 
 
 
