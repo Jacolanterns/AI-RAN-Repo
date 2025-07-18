@@ -6,8 +6,10 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{enumitem}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
 \begin{document}
 
 \title{Conference Paper Title*\\
@@ -82,11 +84,14 @@ as one part of the entire proceedings, and not as an independent document.
 Please do not revise any of the current designations.
 
 \section{AI Toolkits and Potential Applications for Mobile Networks}
-The integration of Artificial Intelligence (AI) into the Radio Access Network (RAN) represents a paradigm shift from traditional, human-driven optimization to intelligent, autonomous network control. However, bridging the gap between advanced AI models and the real-time, high-stakes environment of a mobile network requires a new class of foundational software. AI toolkits for the RAN are specialized frameworks designed to address this challenge, providing the essential infrastructure to develop, deploy, and manage AI-driven applications within the complex cellular architecture.
+\textcolor{blue}{The integration of Artificial Intelligence (AI) into the Radio Access Network (RAN) represents a paradigm shift from traditional, human-driven optimization to intelligent, autonomous network control. However, bridging the gap between advanced AI models and the real-time, high-stakes environment of a mobile network requires a new class of foundational software. AI toolkits for the RAN are specialized frameworks designed to address this challenge, providing the essential infrastructure to develop, deploy, and manage AI-driven applications within the complex cellular architecture.}
 
-The primary goal of these toolkits is to streamline the entire AI workflow by addressing three critical pillars:
+\textcolor{blue}{The primary goal of these toolkits is to streamline the entire AI workflow by addressing three critical pillars:}
 
 \begin{enumerate}
+\renewcommand\labelitemi{\textcolor{blue}{\textbullet}}
+\renewcommand\labelenumi{\textcolor{blue}{\theenumi.}}
+\color{blue}
 \item GPU-Acceleration: The RAN operates under extremely strict latency constraints. These toolkits provide optimized libraries that leverage the parallel processing power of Graphics Processing Units (GPUs) to ensure that sophisticated AI algorithms can execute within the real-time budget of the RAN.
 
 \item Data Processing and Management: A modern RAN is a prolific source of data. AI toolkits offer robust data pipelines to ingest, aggregate, and pre-process this high-velocity data, transforming it into a clean, model-ready format.
@@ -95,19 +100,22 @@ The primary goal of these toolkits is to streamline the entire AI workflow by ad
 
 \end{enumerate}
 
-In essence, AI toolkits serve as the critical enabling layer, abstracting away the underlying hardware and data complexity to empower developers and operators to build and operate a truly intelligent RAN.
+\textcolor{blue}{In essence, AI toolkits serve as the critical enabling layer, abstracting away the underlying hardware and data complexity to empower developers and operators to build and operate a truly intelligent RAN.}
 
 \subsection{AI toolkits}\label{AA}
 
-NVIDIA provides several advanced AI toolkits that accelerate the design, testing, and operation of current and future wireless communication systems, including 5G and 6G.
+\textcolor{blue}{NVIDIA provides several advanced AI toolkits that accelerate the design, testing, and operation of current and future wireless communication systems, including 5G and 6G.}
 
+\textcolor{blue}{
 \subsubsection{RAN-Specific Platforms \& SDKs}
-While the concept of an AI toolkit is broad, several industry players offer specific platforms and SDKs. An exemplary platform is the NVIDIA Aerial SDK, a complete software stack for building high-performance, GPU-accelerated, cloud-native 5G and 6G virtualized RANs (vRANs). Its architecture is centered on two core libraries:
+\textcolor{blue}{While the concept of an AI toolkit is broad, several industry players offer specific platforms and SDKs. An exemplary platform is the NVIDIA Aerial SDK, a complete software stack for building high-performance, GPU-accelerated, cloud-native 5G and 6G virtualized RANs (vRANs). Its architecture is centered on two core libraries:}}
+
 
 \begin{itemize}
-\item cuBB (CUDA Baseband): Regarded as the "heart of Aerial," it acts as the signal processing engine by implementing the entire L1-L2 stack (cuPHY and cuMAC) on the GPU, ensuring high throughput by keeping all processing within high-performance GPU memory.
 
-\item cuVNF (CUDA Virtual Network Functions): This SDK serves as the I/O engine, providing optimised input/output directly to GPU memory from GPUDirect-capable Network Interface Cards (NICs).
+\item \textcolor{blue}{cuBB (CUDA Baseband): Regarded as the ``heart of Aerial,'' it acts as the signal processing engine by implementing the entire L1-L2 stack (cuPHY and cuMAC) on the GPU, ensuring high throughput by keeping all processing within high-performance GPU memory.}
+
+\item \textcolor{blue}{cuVNF (CUDA Virtual Network Functions): This SDK serves as the I/O engine, providing optimised input/output directly to GPU memory from GPUDirect-capable Network Interface Cards (NICs).}
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -116,18 +124,18 @@ While the concept of an AI toolkit is broad, several industry players offer spec
 \label{fig:nvidia_aerial_sdk}
 \end{figure}
 
-The broader market of established vendors is also integrating AI. Qualcomm focuses on powerful hardware like the X100 Accelerator Card for inline acceleration. Ericsson embeds AI deeply into its solutions via its Intelligent RAN Automation portfolio. Nokia offers both a commercial RAN Intelligent Controller (RIC) and integrates AI into its AirScale baseband portfolio.
+\textcolor{blue}{The broader market of established vendors is also integrating AI. Qualcomm focuses on powerful hardware like the X100 Accelerator Card for inline acceleration. Ericsson embeds AI deeply into its solutions via its Intelligent RAN Automation portfolio. Nokia offers both a commercial RAN Intelligent Controller (RIC) and integrates AI into its AirScale baseband portfolio.}
 
-\subsubsection{The O-RAN Architectural Framework}
-The O-RAN Alliance defines a disaggregated and intelligent architecture for the RAN, centered on the RAN Intelligent Controller (RIC). The RIC functions as the network's "operating system," enabling AI-driven control via a modular, app-based model. It is split into the Non-Real-Time RIC (for network-wide policies via rApps) and the Near-Real-Time RIC (for low-latency control via xApps).
+\textcolor{blue}{\subsubsection{The O-RAN Architectural Framework}
+The O-RAN Alliance defines a disaggregated and intelligent architecture for the RAN, centered on the RAN Intelligent Controller (RIC). The RIC functions as the network's "operating system," enabling AI-driven control via a modular, app-based model. It is split into the Non-Real-Time RIC (for network-wide policies via rApps) and the Near-Real-Time RIC (for low-latency control via xApps).}
 
-\subsubsection{Simulation and Data Generation Toolkits}
-The development of robust AI models is critically dependent on large, high-quality datasets. Simulation toolkits fill this gap.
+\textcolor{blue}{\subsubsection{Simulation and Data Generation Toolkits}
+The development of robust AI models is critically dependent on large, high-quality datasets. Simulation toolkits fill this gap.}
 
 \begin{itemize}
-\item NVIDIA Sionna: An open-source, Python-based library for link-level simulation. It is designed for communications research and enables the rapid prototyping of AI/ML systems for the physical layer. It includes modules for ray tracing (Sionna RT), link-level simulation (Sionna PHY), and system-level simulation (Sionna SYS). A key component is the Sionna Research Kit (SRK), which enables the deployment of trained models into a real software-defined 5G network on the NVIDIA Jetson AGX Orin platform.
+\item \textcolor{blue}{NVIDIA Sionna: An open-source, Python-based library for link-level simulation. It is designed for communications research and enables the rapid prototyping of AI/ML systems for the physical layer. It includes modules for ray tracing (Sionna RT), link-level simulation (Sionna PHY), and system-level simulation (Sionna SYS). A key component is the Sionna Research Kit (SRK), which enables the deployment of trained models into a real software-defined 5G network on the NVIDIA Jetson AGX Orin platform.}
 
-\item NVIDIA Aerial Omniverse Digital Twin (AODT): A next-generation, system-level simulation platform for R\&D on 5G/6G systems. AODT applies ray-traced channels to the NVIDIA Aerial RAN platform, simulating the system-level performance of an actual network deployment without abstractions. It is a unique tool to benchmark performance and explore ML algorithms under real-world conditions.
+\item \textcolor{blue}{NVIDIA Aerial Omniverse Digital Twin (AODT): A next-generation, system-level simulation platform for R\&D on 5G/6G systems. AODT applies ray-traced channels to the NVIDIA Aerial RAN platform, simulating the system-level performance of an actual network deployment without abstractions. It is a unique tool to benchmark performance and explore ML algorithms under real-world conditions.}
 \end{itemize}
 
 \begin{figure}[htbp]
@@ -136,57 +144,57 @@ The development of robust AI models is critically dependent on large, high-quali
 \label{fig:nvidia_sionna_simulation}
 \end{figure}
 
-\subsubsection{General Purpose \& Emerging Toolkits}
-A new frontier in network automation is the application of Large Language Models (LLMs) and Generative AI (GenAI). Toolkits involving models like Gemini, coupled with the Retrieval-Augmented Generation (RAG) technique, are being explored for complex network operations like automated root cause analysis, configuration script generation, and interactive troubleshooting.
 
+\textcolor{blue}{\subsubsection{General Purpose \& Emerging Toolkits}
+A new frontier in network automation is the application of Large Language Models (LLMs) and Generative AI (GenAI). Toolkits involving models like Gemini, coupled with the Retrieval-Augmented Generation (RAG) technique, are being explored for complex network operations like automated root cause analysis, configuration script generation, and interactive troubleshooting.}
 
 \subsection{Technical feasibility}
-The introduction of the AI toolkits described raises critical questions about their practical implementation and technological readiness. This section assesses the technical feasibility, focusing on their performance, data dependency, maturity, and operational robustness.
+\textcolor{blue}{The introduction of the AI toolkits described raises critical questions about their practical implementation and technological readiness. This section assesses the technical feasibility, focusing on their performance, data dependency, maturity, and operational robustness.}
 
-\subsubsection{Model Performance and Algorithmic Efficiency}
-The feasibility of toolkits like the NVIDIA Aerial SDK and the O-RAN RIC hinges on their ability to execute AI algorithms within the RAN’s stringent latency budgets. For platforms such as Aerial, which move L1 processing to GPUs, the key feasibility question is whether this software-defined approach can consistently match or exceed the performance of traditional hardware while simultaneously running AI models for real-time tasks like beam management. Similarly, for the O-RAN framework, the performance of an xApp is constrained by the processing capacity of the Near-RT RIC platform it runs on and the latency of the E2 interface, making algorithmic efficiency a non-negotiable requirement for any viable application.
+\textcolor{blue}{\subsubsection{Model Performance and Algorithmic Efficiency}
+The feasibility of toolkits like the NVIDIA Aerial SDK and the O-RAN RIC hinges on their ability to execute AI algorithms within the RAN’s stringent latency budgets. For platforms such as Aerial, which move L1 processing to GPUs, the key feasibility question is whether this software-defined approach can consistently match or exceed the performance of traditional hardware while simultaneously running AI models for real-time tasks like beam management. Similarly, for the O-RAN framework, the performance of an xApp is constrained by the processing capacity of the Near-RT RIC platform it runs on and the latency of the E2 interface, making algorithmic efficiency a non-negotiable requirement for any viable application.}
 
-\subsubsection{Data Availability and Accessibility}
-The AI toolkits discussed are fundamentally dependent on data. For toolkits aimed at the physical layer, like NVIDIA Sionna, feasibility is enhanced by its ability to synthetically generate high-fidelity training data. For emerging GenAI toolkits, feasibility depends on creating robust RAG pipelines that can interpret diverse operator data sources.
+\textcolor{blue}{\subsubsection{Data Availability and Accessibility}
+The AI toolkits discussed are fundamentally dependent on data. For toolkits aimed at the physical layer, like NVIDIA Sionna, feasibility is enhanced by its ability to synthetically generate high-fidelity training data. For emerging GenAI toolkits, feasibility depends on creating robust RAG pipelines that can interpret diverse operator data sources.}
 
-\subsubsection{Technology Maturity and Integration}
-While individual technologies are maturing, their integration poses a significant technical challenge. The NVIDIA Aerial SDK is a mature product, but its feasibility depends on seamless integration into a multi-vendor vRAN ecosystem. The O-RAN framework itself represents a major integration challenge focused on interoperability.
+\textcolor{blue}{\subsubsection{Technology Maturity and Integration}
+While individual technologies are maturing, their integration poses a significant technical challenge. The NVIDIA Aerial SDK is a mature product, but its feasibility depends on seamless integration into a multi-vendor vRAN ecosystem. The O-RAN framework itself represents a major integration challenge focused on interoperability.}
 
-\subsubsection{Security, Reliability, and Scalability}
-For these toolkits to be technically feasible, they must meet telco-grade requirements. The reliability of a software-defined stack like NVIDIA Aerial must be proven to match the "five-nines" (99.999\%) availability of traditional hardware. The scalability of managing thousands of unique xApp instances across a national network poses a significant MLOps challenge.
+\textcolor{blue}{\subsubsection{Security, Reliability, and Scalability}
+For these toolkits to be technically feasible, they must meet telco-grade requirements. The reliability of a software-defined stack like NVIDIA Aerial must be proven to match the "five-nines" (99.999\%) availability of traditional hardware. The scalability of managing thousands of unique xApp instances across a national network poses a significant MLOps challenge.}
 
 \subsection{Potential applications in mobile networks}
-The surveyed toolkits facilitate a range of high-impact use cases for building intelligent mobile networks:
+\textcolor{blue}{The surveyed toolkits facilitate a range of high-impact use cases for building intelligent mobile networks:}
 
 \begin{itemize}
-\item AI-Native Air Interface: The NVIDIA Aerial SDK enables the development of highly programmable and scalable 5G vRANs where AI/ML frameworks can be seamlessly integrated for real-time signal processing.
+\item \textcolor{blue}{AI-Native Air Interface: The NVIDIA Aerial SDK enables the development of highly programmable and scalable 5G vRANs where AI/ML frameworks can be seamlessly integrated for real-time signal processing.}
 
-\item System-Level R\&D and Optimization: The NVIDIA AODT allows researchers to benchmark system performance, explore ML-based algorithms, and optimize network planning using physically accurate simulations without abstractions.
+\item \textcolor{blue}{System-Level R\&D and Optimization: The NVIDIA AODT allows researchers to benchmark system performance, explore ML-based algorithms, and optimize network planning using physically accurate simulations without abstractions.}
 
-\item Rapid Prototyping and Deployment: NVIDIA Sionna accelerates research into 6G by enabling fast, GPU-accelerated modeling of communication systems, while its Sionna Research Kit (SRK) bridges the gap from research to reality by enabling deployment into a real software-defined 5G network.
+\item \textcolor{blue}{Rapid Prototyping and Deployment: NVIDIA Sionna accelerates research into 6G by enabling fast, GPU-accelerated modeling of communication systems, while its Sionna Research Kit (SRK) bridges the gap from research to reality by enabling deployment into a real software-defined 5G network.}
 \end{itemize}
 
 \subsection{Deployment constraints in mobile networks}
 
-The practical deployment of these toolkits is constrained by specific hardware and software requirements.
+\textcolor{blue}{The practical deployment of these toolkits is constrained by specific hardware and software requirements.}
 
-\subsubsection{NVIDIA Aerial Omniverse Digital Twin (AODT)}
+\textcolor{blue}{\subsubsection{NVIDIA Aerial Omniverse Digital Twin (AODT)}}
 
-\textbf{Hardware:} Requires specific NVIDIA GPUs with substantial vRAM (e.g., RTX 6000 Ada with 12GB+ for frontend; A100/H100 with 48GB+ for backend). Qualified systems include Dell R750 servers with Intel Xeon Gold CPUs and 512GB DDR4 Memory.
+\textcolor{blue}{\textbf{Hardware:} Requires specific NVIDIA GPUs with substantial vRAM (e.g., RTX 6000 Ada with 12GB+ for frontend; A100/H100 with 48GB+ for backend). Qualified systems include Dell R750 servers with Intel Xeon Gold CPUs and 512GB DDR4 Memory.}
 
-\textbf{Software:} The backend requires Ubuntu 22.04. The frontend supports Ubuntu 22.04 and Windows 11. Specific NVIDIA driver versions are required (e.g., 560.35.05 for Linux backend).
+\textcolor{blue}{\textbf{Software:} The backend requires Ubuntu 22.04. The frontend supports Ubuntu 22.04 and Windows 11. Specific NVIDIA driver versions are required (e.g., 560.35.05 for Linux backend).}
 
-\subsubsection{NVIDIA Aerial SDK}
+\textcolor{blue}{\subsubsection{NVIDIA Aerial SDK}}
 
-\textbf{Hardware:} Runs on NVIDIA-certified EGX servers. Qualified platforms use GPUs like the NVIDIA A100x, DPUs like the Mellanox CX6-DX, and CPUs such as the Intel Xeon Gold 6336Y. Memory ranges from 96GB to 512GB of DDR4 RAM.
+\textcolor{blue}{\textbf{Hardware:} Runs on NVIDIA-certified EGX servers. Qualified platforms use GPUs like the NVIDIA A100x, DPUs like the Mellanox CX6-DX, and CPUs such as the Intel Xeon Gold 6336Y. Memory ranges from 96GB to 512GB of DDR4 RAM.}
 
-\textbf{Software:} Requires a specific stack, including Ubuntu 20.04 with a low-latency kernel, CUDA 11.7 Toolkit, and Kubernetes version 1.23.
+\textcolor{blue}{\textbf{Software:} Requires a specific stack, including Ubuntu 20.04 with a low-latency kernel, CUDA 11.7 Toolkit, and Kubernetes version 1.23.}
 
-\subsubsection{NVIDIA Sionna}
+\textcolor{blue}{\subsubsection{NVIDIA Sionna}}
 
-\textbf{Hardware:} While GPU-accelerated for performance, Sionna can also run on a CPU. The Sionna Research Kit (SRK) component is specifically designed for the NVIDIA Jetson AGX Orin platform.
+\textcolor{blue}{\textbf{Hardware:} While GPU-accelerated for performance, Sionna can also run on a CPU. The Sionna Research Kit (SRK) component is specifically designed for the NVIDIA Jetson AGX Orin platform.}
 
-\textbf{Software:} Requires Python 3.8-3.12 and TensorFlow 2.14-2.19. Ubuntu 24.04 is the recommended operating system. A Docker container or Python virtual environment is highly recommended.
+\textcolor{blue}{\textbf{Software:} Requires Python 3.8-3.12 and TensorFlow 2.14-2.19. Ubuntu 24.04 is the recommended operating system. A Docker container or Python virtual environment is highly recommended.}
 
 {\BibTeX} does not work by magic. It doesn't get the bibliographic
 data from thin air but from .bib files. If you use {\BibTeX} to produce a
@@ -277,55 +285,17 @@ copy& More table copy$^{\mathrm{a}}$& &  \\
 
 \begin{figure}[htbp]
 \centerline{\includegraphics{fig1.png}}
-\caption{Example of a figure caption.}
+\caption{Sample figure referenced in the text.}
 \label{fig}
 \end{figure}
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
+\section{Conclusion}
+The integration of artificial intelligence is a critical component of the roadmap to 6G wireless networks \cite{letaief_roadmap_2019}. This has spurred the development of advanced toolkits from major industry players. For example, established vendors like Ericsson are offering platforms for intelligent RAN automation \cite{ericsson_iran_2025}.
 
-\section*{Acknowledgment}
+At a more granular level, NVIDIA provides a suite of tools for building GPU-accelerated RAN. This includes detailed software components for the baseband and physical layers, such as the Aerial cuBB and cuPHY \cite{nvidia_cubb_quickstart_2025, nvidia_cuphy_overview_2025}. Furthermore, to facilitate the research and training of AI models for these new systems, simulation libraries like NVIDIA Sionna have become essential \cite{nvidia_sionna_2025}.
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
-
-\section*{References}
-
-Please number citations consecutively within brackets. The 
-sentence punctuation follows the bracket. Refer simply to the reference 
-number---do not use ``Ref.'' or ``reference'' except at 
-the beginning of a sentence: ``Reference [1] was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished''. Papers 
-that have been accepted for publication should be cited as ``in press''. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation.
-
-\begin{thebibliography}{00}
-
-\bibitem{b1} Example reference - replace with actual references when available.
-
-\end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
-
+{\color{blue}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+}
 \end{document}

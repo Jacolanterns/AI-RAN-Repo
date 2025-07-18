@@ -1,9 +1,18 @@
 # Fdb version 4
-["pdflatex"] 1752806870.82759 "c:/Users/justi/Jac ITB/Internship/TEEP/Survey Paper AI RAN/AI-RAN-Repo/AI Survey Paper Part 3 Draft_Justin.tex" "AI Survey Paper Part 3 Draft_Justin.pdf" "AI Survey Paper Part 3 Draft_Justin" 1752806872.07044 0
-  "AI Survey Paper Part 3 Draft_Justin.aux" 1752806871 4239 21c8c3809bce74ecb045eb327a4afbfd "pdflatex"
-  "AI Survey Paper Part 3 Draft_Justin.tex" 1752806870 21639 37a7d3baa035f9b9dc92377ee8592502 ""
+["bibtex AI Survey Paper Part 3 Draft_Justin"] 1752822023.79263 "AI Survey Paper Part 3 Draft_Justin.aux" "AI Survey Paper Part 3 Draft_Justin.bbl" "AI Survey Paper Part 3 Draft_Justin" 1752822425.6 0
+  "./references.bib" 1752817610 1646 b5b598bf5695591735004a9771991bf5 ""
+  "AI Survey Paper Part 3 Draft_Justin.aux" 1752822424 4312 07ba01182c2aab1d956eb59e62784d62 "pdflatex"
+  "c:/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1752722850 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  (generated)
+  "AI Survey Paper Part 3 Draft_Justin.bbl"
+  "AI Survey Paper Part 3 Draft_Justin.blg"
+  (rewritten before read)
+["pdflatex"] 1752822423.3432 "c:/Users/justi/Jac ITB/Internship/TEEP/Survey Paper AI RAN/AI-RAN-Repo/AI Survey Paper Part 3 Draft_Justin.tex" "AI Survey Paper Part 3 Draft_Justin.pdf" "AI Survey Paper Part 3 Draft_Justin" 1752822425.60139 0
+  "AI Survey Paper Part 3 Draft_Justin.aux" 1752822424 4312 07ba01182c2aab1d956eb59e62784d62 "pdflatex"
+  "AI Survey Paper Part 3 Draft_Justin.bbl" 1752822024 2194 c99aec7bade90f9601ab91407001dd4b "bibtex AI Survey Paper Part 3 Draft_Justin"
+  "AI Survey Paper Part 3 Draft_Justin.tex" 1752822422 20848 be7ef1a37d8d7ef8879a5a89a8ffa8c8 ""
   "IEEEtran.cls" 1752729072 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "c:/Users/justi/Jac ITB/Internship/TEEP/Survey Paper AI RAN/AI-RAN-Repo/AI Survey Paper Part 3 Draft_Justin.tex" 1752806870 21639 37a7d3baa035f9b9dc92377ee8592502 ""
+  "c:/Users/justi/Jac ITB/Internship/TEEP/Survey Paper AI RAN/AI-RAN-Repo/AI Survey Paper Part 3 Draft_Justin.tex" 1752822422 20848 be7ef1a37d8d7ef8879a5a89a8ffa8c8 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1752722256 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1752722537 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1752722058 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -42,7 +51,6 @@
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1752721456 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1752721456 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1752721456 32762 7fee39e011c23b3589931effd97b9702 ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1752721456 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1752721456 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1752722058 45758 19968a0990191524e34e1994d4a31cb6 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1752724981 44729 fea0975e20ec51c992338362f05f1146 ""
@@ -69,6 +77,7 @@
   "c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty" 1752723047 5525 1593ca62a2554dd7423fc8a4e5a82125 ""
   "c:/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty" 1752723048 2846 e26604d3d895e65d874c07f30c291f3f ""
   "c:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty" 1752721912 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
+  "c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty" 1752722333 52272 63d293bc0d496619edb57585740861a2 ""
   "c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1752722350 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1752722683 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1752722683 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -80,7 +89,6 @@
   "c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty" 1752722682 4023 e66acf578d6b564c4670fb57ff336a7a ""
   "c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1752723025 30351 a2b09edc6c93a742566b222c33d0278e ""
   "c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1752723090 678 4792914a8f45be57bb98413425e4c7af ""
-  "c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsptm.fd" 1752723893 576 95c2c0baea9c719a4be29a3d4122498b ""
   "c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd" 1752723893 985 1ed784d7bfe47179f3550d2303b073f8 ""
   "c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1752723893 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty" 1752725753 55384 b454dec21c2d9f45ec0b793f0995b992 ""

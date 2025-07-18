@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 10:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -230,56 +230,64 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen183
+\enit@toks=\toks24
+\enit@inbox=\box57
+\enit@count@id=\count306
+\enitdp@description=\count307
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
+\l__color_backend_stack_int=\count308
 ) (./AI Survey Paper Part 3 Draft_Justin.aux)
 \openout1 = `"AI Survey Paper Part 3 Draft_Justin.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 -- Lines per column: 56 (exact).
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen183
-\scratchbox=\box57
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen184
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count309
+\scratchdimen=\dimen184
+\scratchbox=\box58
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen185
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks26
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 56.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 58.
 
 
 
@@ -291,10 +299,10 @@ LaTeX Font Info:    Calculating math sizes for size <11> on input line 56.
 <images/nvidia_aerial_sdk.jpg, id=10, 1204.5pt x 677.53125pt>
 File: images/nvidia_aerial_sdk.jpg Graphic file (type jpg)
 <use images/nvidia_aerial_sdk.jpg>
-Package pdftex.def Info: images/nvidia_aerial_sdk.jpg  used on input line 114.
+Package pdftex.def Info: images/nvidia_aerial_sdk.jpg  used on input line 122.
 (pdftex.def)             Requested size: 226.79846pt x 127.57439pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 130--131
+Underfull \hbox (badness 1383) in paragraph at lines 138--139
 \OT1/ptm/m/n/10 next-generation, system-level sim-u-la-tion plat-form for
  []
 
@@ -303,41 +311,50 @@ Underfull \hbox (badness 1354) in paragraph at lines 130--131
 <images/nvidia_sionna_simulation.png, id=11, 553.5882pt x 426.393pt>
 File: images/nvidia_sionna_simulation.png Graphic file (type png)
 <use images/nvidia_sionna_simulation.png>
-Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line 134.
+Package pdftex.def Info: images/nvidia_sionna_simulation.png  used on input line 142.
 (pdftex.def)             Requested size: 226.79846pt x 174.68562pt.
 
 
 [2 <./images/nvidia_aerial_sdk.jpg> <./images/nvidia_sionna_simulation.png>]
-Underfull \hbox (badness 1400) in paragraph at lines 175--176
- \OT1/ptm/m/it/10 1) NVIDIA Aerial Om-ni-verse Dig-i-tal Twin (AODT): [][]
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 177--178
+Underfull \hbox (badness 1742) in paragraph at lines 185--186
 \OT1/ptm/m/n/10 tend sup-ports Ubuntu 22.04 and Win-dows 11. Spe-cific
  []
 
 
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 200.
+
+Underfull \hbox (badness 6141) in paragraph at lines 195--196
+[][]\OT1/ptm/b/n/10 Hardware: \OT1/ptm/m/n/10 While GPU-accelerated for per-for-mance,
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 208.
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 [3]
+
 <fig1.png, id=24, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 279.
+Package pdftex.def Info: fig1.png  used on input line 287.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 290.
- (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
+(./AI Survey Paper Part 3 Draft_Justin.bbl
+Underfull \hbox (badness 2922) in paragraph at lines 33--35
+[]\OT1/ptm/m/n/8 NVIDIA. (2025) Aerial cubb quick-start overview.
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 33--35
+\OT1/ptm/m/n/8 Ac-cessed: Jul. 18, 2025. [On-line]. Avail-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 33--35
+\OT1/ptm/m/n/8 able: https://docs.nvidia.com/aerial/archive/cuda-accelerated-ran/24-
+ []
+
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 290.
-
-
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -358,18 +375,18 @@ L3 programming layer <2025-07-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4303 strings out of 467816
- 67195 string characters out of 5436431
- 486137 words of memory out of 5000000
- 32877 multiletter control sequences out of 15000+600000
- 676794 words of font info for 140 fonts, out of 8000000 for 9000
+ 4634 strings out of 467816
+ 73074 string characters out of 5436431
+ 492891 words of memory out of 5000000
+ 33203 multiletter control sequences out of 15000+600000
+ 677930 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,858b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (4 pages, 927427 bytes).
+ 57i,11n,65p,885b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "AI Survey Paper Part 3 Draft_Justin.pdf" (4 pages, 918554 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
