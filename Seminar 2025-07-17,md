@@ -1,0 +1,167 @@
+# Authentication Key Agreement for Wireless Body Area Networks (WBANs)
+## Seminar Date: July 17, 2025
+by Dr. Mwitende Gervais (PhD)
+
+### WBAN consists of:
+- Body sensors
+- PDA/ Controller
+- Medical / Application server
+
+### Why WBAN?
+- Remote patient monitoring
+- Prveentian and early risk detection
+- Information sharing
+- Patient mobility
+
+Although the benefits, users usually abstain from using their sensitive data in WBANs for the security and privacy concerns
+
+### Problem Statement
+From previous related works, there is an essential need for new types of authenticated key agreement protocols to tackle the limitations of existing protocols for WBAN, to solve this:
+- Need for a secure AKA
+- Need for a lightweight AKA
+- Need for a decentralized AKA
+How to solve it?
+
+### System Model
+
+A CLAKA Protocol for Blockchain-based WBANs using Bilinear Pairing
+
+#### Entities and Protocol Steps
+
+- **Key Generation Center (KGC):** KGC generates public parameters and partial private keys for controller C and node N.
+- **Controller C:** The controller establishes a session key with node N that is used to encrypt data during WBAN communication.
+- **Nodes N:** Node N is a collector node that collects WBAN data and broadcasts it to the blockchain.
+- **Blockchain nodes:** Blockchain nodes will authenticate each other before cooperating.
+- There must be a session key and a consent form for nodes to use WBAN data.
+- Controller C and node N compute their full private keys and then establish an AKA for future communication.
+- The computed session key is used to encrypt patient data during transmission.
+- A certificateless ring signature is used between nodes for their authentication.
+
+### The construction of CLAKA based on pairings
+
+The CLAKA consists of the following algorithms:
+
+- **Setup:** A KGC takes as input security parameter $\ell$ and computes the following:
+    - Select a cyclic additive group $G_1$ of order $q$, and multiplicative $G_2$, a generator $P$ of $G_1$ and bilinear map $e : G_1 \times G_1 \rightarrow G_2$.
+    - Selects a random master key $z \in \mathbb{Z}_q^*$ and compute $P_{pub} = zP$.
+    - Selects hash functions: $H_1 : \{0,1\}^* \rightarrow G_1$, $H_2 : \{0,1\}^* \times G_2 \times G_3 \rightarrow \{0,1\}^\ell$.
+    - The list $params=\{G_1, G_2, P, P_{pub}, H_1, H_2, \ell\}$.
+
+- **Partial Private Key Extract:** KGC produces the partial private key of participant $i$ as $S_i = zQ_i$ such that $Q_i = H_1(ID_i)$.
+
+- **Set Secret Value:** For a participant $i$ with identity $ID_i$, the algorithm selects a value $y_i$ at random, sets $y_i$ as participant's secret value.
+
+- **Set Private Key:** It takes as input $params$, $ID_i$, and the secret value $y_i$, the partial private key $S_i$ to return $PR_i = y_i S_i$.
+
+- **Set Public Key:** The algorithm takes $params$, the secret value $y_i$, and $ID_i$ for participant to return the public key $X_i = y_i P$, and computes $Y_i = y_i Q_i$.
+
+- **Key Agreement:** The session key is computed as follows:
+    - $C$ selects a short-term random value $r_C \in \mathbb{Z}_q^*$ and computes $T_C = r_C P$. Blockchain node $N$ selects a short-term random value $r_N \in \mathbb{Z}_q^*$ and computes $T_N = r_N P$.
+    - $C$ sends $(ID_C, T_C, Y_C)$ to $N$. $N$ sends $(ID_N, T_N, Y_N)$ to $C$.
+    - $C$ computes $K_{CN} = e(T_N + Y_N, r_C P_{pub} + PR_C)$.
+    - $N$ computes $K_{NC} = e(T_C + Y_C, r_N P_{pub} + PR_N)$.
+    - $C$ and $N$ have the same shared secret session key $K_{CN} = K_{NC} = e(T_N + Y_N, r_C P_{pub} + PR_C)$.
+    - The session key is $SK = H(ID_C, ID_N, T_C, T_N, K)$.
+
+#### Protocol Message Flow and Key Computation
+
+| Controller $C$ |  | Node $N$ |
+|:---|:---:|---:|
+| Generates a random number $r_C \in \mathbb{Z}_q^*$ | | Generates a random number $r_N \in \mathbb{Z}_q^*$ |
+| $T_C = r_C P$ | | $T_N = r_N P$ |
+| $\xrightarrow{(ID_C, T_C)}$ | | $\xleftarrow{(ID_N, T_N)}$ |
+| $K_{CN} = e(T_N + Y_N, r_C P_{pub} + PR_C)$ | $=$ | $K_{NC} = e(T_C + Y_C, r_N P_{pub} + PR_N)$ |
+| $= K$ | | $= K$ |
+| $SK = H_2(ID_C, ID_N, T_C, T_N, K)$ | | $SK = H_2(ID_C, ID_N, T_C, T_N, K)$ |
+
+**Protocol Steps (Detailed):**
+
+1. Controller $C$ generates a random number $r_C \in \mathbb{Z}_q^*$ and computes $T_C = r_C P$.
+2. Node $N$ generates a random number $r_N \in \mathbb{Z}_q^*$ and computes $T_N = r_N P$.
+3. $C$ sends $(ID_C, T_C)$ to $N$; $N$ sends $(ID_N, T_N)$ to $C$.
+4. $C$ computes the session key:
+   - $K_{CN} = e(T_N + Y_N, r_C P_{pub} + PR_C) = K$
+   - $SK = H_2(ID_C, ID_N, T_C, T_N, K)$
+5. $N$ computes the session key:
+   - $K_{NC} = e(T_C + Y_C, r_N P_{pub} + PR_N) = K$
+   - $SK = H_2(ID_C, ID_N, T_C, T_N, K)$
+6. Both $C$ and $N$ share the same session key $SK$ for secure communication.
+### Correctness
+
+The computed session key holds because:
+
+$$
+K_{NC} = e(T_C + Y_C, r_N P_{pub} + PR_N) \\
+\quad = e(T_C + Y_C, r_N P + y_N Q_N)^z \\
+\quad = e(T_C + Y_C, T_N + Y_N)^z \\
+\quad = e(r_C z P + z y_C Q_C, T_N + Y_N) \\
+\quad = e(r_C P_{pub} + PR_C, T_N + Y_N) \\
+\quad = K_{CN} \\
+\quad = K
+$$
+
+### Certificateless Ring Signature Scheme
+
+We use the ring signature for blockchain nodes authentication. It also provides anonymity. KGC selects three cryptographic hash functions $H_1$, $H_2$ and $H_3$, and are defined as $H_1: \{0,1\}^* \rightarrow Z_q^*$, $H_2: \{0,1\}^* \rightarrow Z_q^*$, and $H_3: G_1 \rightarrow Z_q^*$. Computes $g = (e(P, P))$ and performs the following operations to construct the concrete signature.
+
+- **Setup:** The KGC selects $z \in Z_q^*$, computes a public key $P_{pub} = zP$. The master secret key $z$ is kept secret. KGC publishes $params = \{G_1, G_2, e, g, H_1, H_2, H_3, P, P_{pub}\}$.
+
+- **Partial Private Key Extract:** The signing node with identity $ID \in \{0,1\}^*$ submits $ID$ to KGC. KGC sets the signing node's public key as $Q_{ID} = H_1(ID)$, computes the signing node's partial private key as $D_{ID} = \frac{1}{z + Q_{ID}}P$. Then KGC sends the partial private key to the signing node via a secure channel.
+
+- **Set Secret Value:** The signing node with identity $ID$ selects randomly a secret value $x_{ID} \in Z_q^*$.
+
+- **Set Public Key:** A signing node with identity $ID$ takes $params$, the secret value $x_{ID}$ as input to compute the following:
+    - Computes $Z_{ID} = P_{pub} + H_1(ID)P$.
+    - Computes $PK_{ID} = x_{ID} Z_{ID}$.
+    - Returns $PK_{ID} = x_{ID} Z_{ID}$ as a public key.
+
+- **Set Private Key:** After obtaining the partial private key $D_{ID}$, the signing node with identity $ID$ takes $params$, the secret value $x_{ID}$ and performs the following to get his/her private key:
+    - Computes $y_{ID} = H_2(PK_{ID})$.
+    - Computes $PR_{ID} = \frac{1}{x_{ID} + y_{ID}} D_{ID}$.
+    - Returns $PR_{ID}$ as its private key.
+
+- **Verify:** A verifying node can check and validate signature $\varphi = \{u, U, \{V_{ID_i}\}_{i=1}^n\}$ signed on behalf of the group $L$ and public sets $PK$ by checking if the following equation holds:
+
+$$
+g^{H_2(M, u, L, PK)} \cdot u = \prod_{i, i \neq A}^n e(V_{ID_i}, PK_{ID_i} + y_{ID_i} Z_{ID_i})
+$$
+
+### Theorem
+
+- The proposed protocol is a secure CLAKA protocol based on CDH and BDH hard assumptions.
+- The proposed protocol provides the perfect forward security if the CDH assumption in $G$ is hard.
+
+### Table 1: Comparison based on security properties
+
+| Feature                        | [22] | [24] | [25] | Ours |
+|--------------------------------|:----:|:----:|:----:|:----:|
+| Key compromise impersonation   |  ✓   |  ✓   |  ✓   |  ✓   |
+| Key escrow                     |  ✗   |  ✗   |  ✓   |  ✓   |
+| Anonymity                      |  ✗   |  ✗   |  ✓   |  ✓   |
+| Decentralized                  |  ✗   |  ✗   |  ✓   |  ✓   |
+| Immutability                   |  ✗   |  ✗   |  ✓   |  ✓   |
+| Verifiability                  |  ✗   |  ✗   |  ✓   |  ✓   |
+| Consensus                      |  ✗   |  ✗   |  ✗   |  ✓   |
+
+### Table 2: Comparison based on computation and communication costs
+
+| Schemes | Computation cost (Client) | Computation cost (Server) | Communication cost |
+|---------|:-------------------------:|:------------------------:|:------------------:|
+| [22]    | $T_e + 9T_m + 9T_t + 7T_z$ | $7T_e + 5T_m + 10T_t + 7T_z$ | $|2ID + 2Z_e^* + 2G_1 + 2Z_q|$ |
+| [24]    | $2T_e + 5T_m + T_t$         | $7T_e + 4T_m + T_t$         | $|6Z_e^* + 4G_1 + 4Z_q|$        |
+| [25]    | $6T_m$                      | $6T_m$                      | $|4Z_e^* + 4G_1 + 3Z_q + 2ID|$  |
+| Ours    | $T_e + 2T_m$                | $T_e + 2T_m$                | $|2ID + 2Z_e^* + 2G_1|$         |
+
+---
+
+# IoT on Agricultural Pest Outbreaks
+
+
+
+
+
+
+
+
+
+
